@@ -9,13 +9,13 @@
 	},
 	"wpsSetup":{
 		"header": "WPS Setup and Configuration",
-		"description": "This is the basic configuration-tab. To use Web Processing functionalities you first have to choose an available service and also specify it's vesion. With each re-selection (WPS or version), a GetCapabilities request will be executed. The capabilities response is then used to update the application and enable the remaining tabs.",
+		"description": "This is the basic configuration tab. To use Web Processing functionalities you first have to choose an available service and also specify its version. With each re-selection (WPS or version), a GetCapabilities request will be executed. The capabilities response is then used to update the application and enable the remaining tabs.",
 		"changeLanguage" : "Change Language",
-		"selectWpsLanguagePlaceholder" : "here you may change the language ...",
+		"selectWpsLanguagePlaceholder" : "Here you may change the language...",
 		"addWpsButton": "Add WPS URL",
 		"removeWpsButton": "Remove selected WPS",
 		"chooseWps": "Please choose a WPS from the list:",
-		"selectWpsPlaceholder": "select WPS ...",
+		"selectWpsPlaceholder": "Select WPS...",
 		"chooseVersion": "Select the desired WPS service-version",
 		"capabilitiesFailed_short" : "Error",
 		"capabilitiesFailed_text" : "The GetCapabilities request against the currently selected Web Processing Service did not succeed. Please check the availability of the defined service and try again.",
@@ -27,8 +27,8 @@
 			"description" : "Please enter a valid endpoint URL starting with 'http:' or 'https:' pointing to a existing Web Processing Service",
 			"inputText" : "WPS URL",
 			"placeholder" : "http://myWPS.example.org/WebProcessingService",
-			"submit" : "add",
-			"close" : "close",
+			"submit" : "Add",
+			"close" : "Close",
 			"alert_short" : "Alert",
 			"alert_unvalidUrl" : "The entered URL was not valid. Please check your URL (e.g. no whitespaces are allowed).",
 			"success_short" : "Success",
@@ -73,7 +73,7 @@
 		"header": "WPS Processes",
 		"description": "This area provides you with information about the selected process, divided in 'common information' and the 'inputs' and 'outputs' of the process.",
 		"chooseWpsProcess" : "Available Processes",
-		"selectWpsProcessPlaceholder" : "choose a process ...",
+		"selectWpsProcessPlaceholder" : "Choose a process...",
 		"generalInformation" : "General Information",
 		"inputs" : "Inputs",
 		"outputs" : "Outputs",
@@ -111,7 +111,7 @@
 			"literalDataDomains" : "Data Domains",
 			"literalDataDomain" : {
 				"allowedValues" : "Allowed Values",
-				"anyValue" : "any value",
+				"anyValue" : "Any value",
 				"dataType" : "Data Type",
 				"dataTypeReference" : "Data Type Reference",
 				"defaultValue" : "Default Value",
@@ -147,25 +147,25 @@
 			"chooseWpsInput" : "Input Selection. Entries marked with 'star' are mandatory",
 			"selectWpsExecuteInputPlaceholder" : "Select Input",
 			"alreadyConfiguredInputs" : "Already Defined Inputs",
-			"alreadyConfiguredInputsPlaceholder" : "list of already defined inputs ...",
+			"alreadyConfiguredInputsPlaceholder" : "List of already defined inputs...",
 			"literalData" : {
 				"inputHeader" : "Literal Data Input",
 				"literalInputValue" : "Literal Input Value",
-				"literalInputValuePlaceholder" : "enter literal value ..."
+				"literalInputValuePlaceholder" : "Enter literal value..."
 			},
 			"complexData" : {
 				"inputHeader" : "Complex Data Input",
 				"selectMimeType" : "Format / MimeType",
-				"selectMimeTypePlaceholder" : "select format ...",
+				"selectMimeTypePlaceholder" : "Select format...",
 				"encoding" : "Encoding",
 				"schema" : "Schema",
 				"asReference" : "As Reference (Link to available ressource)",
 				"textAreaInput" : "Complex Payload",
 				"referenceInput" : "Link to Appropriate Ressource",
 				"fileUploadInput" : "Upload of local file",
-				"drawingInput" : "Digitalisation (map based specification)",
-				"textAreaPlaceholder" : "enter complex payload as raw data ...",
-				"referencePlaceholder" : "enter reference (URL) ..."
+				"drawingInput" : "Use drawing from map",
+				"textAreaPlaceholder" : "Enter complex payload as raw data...",
+				"referencePlaceholder" : "Enter reference (URL)..."
 			},
 			"createInput" : "Add Input",
 			"removeInput" : "Remove Input",
@@ -174,12 +174,12 @@
 			"boundingBoxData" : {
 				"inputHeader" : "Bounding Box Data Input",
 				"crs" : "Coordinate Reference System",
-				"selectCrsPlaceholder" : "choose coordinate reference system ...",
+				"selectCrsPlaceholder" : "Choose coordinate reference system...",
 				"lowerCorner" : "Definition of Lower Corner",
 				"upperCorner" : "Definition of Upper Corner",
-				"lowerCornerPlaceholder" : "coordinate string (example: '10.0 20.0')",
-				"upperCornerPlaceholder" : "coordinate string (example: '30.0 40.0')",
-				"drawingInput" : "Digitalisation (map based specification)",
+				"lowerCornerPlaceholder" : "Coordinate string (example: '10.0 20.0')",
+				"upperCornerPlaceholder" : "Coordinate string (example: '30.0 40.0')",
+				"drawingInput" : "Map based specification",
 				"cornerInput" : "Specification of corners"
 			}
 		},
@@ -187,15 +187,15 @@
 			"chooseWpsOutput" : "Output Selection. Entries marked with 'star' are mandatory",
 			"selectWpsExecuteOutputPlaceholder" : "Select Output",
 			"alreadyConfiguredOutputs" : "Already Defined Outputs",
-			"alreadyConfiguredOutputsPlaceholder" : "list of already defined outputs ...",
-			"outputFormatPlaceholder" : "select output format ...",
+			"alreadyConfiguredOutputsPlaceholder" : "List of already defined outputs...",
+			"outputFormatPlaceholder" : "Select output format...",
 			"literalData" : {
 				"outputHeader" : "Literal Data Output"
 			},
 			"complexData" : {
 				"outputHeader" : "Complex Data Output",
 				"selectMimeType" : "Format / MimeType",
-				"selectMimeTypePlaceholder" : "select format ...",
+				"selectMimeTypePlaceholder" : "Select format...",
 				"encoding" : "Encoding",
 				"schema" : "Schema"
 			},
@@ -204,7 +204,7 @@
 			"outputTitle" : "Title",
 			"outputIdentifier" : "Unique Identifier",
 			"transmissionMode" : "Transmission Mode",
-			"selectTransmissionModePlaceholder" : "select transmission mode ...",
+			"selectTransmissionModePlaceholder" : "Select transmission mode...",
 			"boundingBoxData" : {
 				"outputHeader" : "Bounding Box Data Output"
 			}
@@ -212,8 +212,8 @@
 		"parametersSetup" : {
 			"jobControlOptions" : "Execution Mode",
 			"responseFormat" : "Response Format",
-			"jobControlOptionsPlaceholder" : "select execution mode ...",
-			"responseFormatPlaceholder" : "select response format ..."
+			"jobControlOptionsPlaceholder" : "Select execution mode...",
+			"responseFormatPlaceholder" : "Select response format..."
 		},
 		"resultDocument-wps-2-0" : {
 			"header" : "Result Document",
