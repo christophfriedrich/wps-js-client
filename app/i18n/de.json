@@ -260,5 +260,106 @@
 	},
 	"wpsGetResult" : {
 		"getResultButton" : "Result-Dokument holen"
-	}
+	},
+    "drawLocal" : {
+        "draw": {
+            "toolbar": {
+                "actions": {
+                    "title": "Zeichnen abbrechen",
+                    "text": "Abbrechen"
+                },
+                "finish": {
+                    "title": "Zeichnen fertigstellen",
+                    "text": "Fertigstellen"
+                },
+                "undo": {
+                    "title": "Lösche letzten gezeichneten Punkt",
+                    "text": "Lösche letzten Punkt"
+                },
+                "buttons": {
+                    "polyline": "Linienzug zeichnen",
+                    "polygon": "Polygon zeichnen",
+                    "rectangle": "Rechteck zeichnen",
+                    "circle": "Kreis zeichnen",
+                    "marker": "Marker zeichnen"
+                }
+            },
+            "handlers": {
+                "circle": {
+                    "tooltip": {
+                        "start": "Klicken und ziehen um Kreis zu zeichnen."
+                    },
+                    "radius": "Radius"
+                },
+                "marker": {
+                    "tooltip": {
+                        "start": "Auf die Karte klicken um Marker zu platzieren."
+                    }
+                },
+                "polygon": {
+                    "tooltip": {
+                        "start": "Klicken um das Zeichnen der Form zu beginnen.",
+                        "cont": "Klicken um das Zeichnen der Form fortzusetzen.",
+                        "end": "Ersten Punkt anklicken, um die Form zu schließen."
+                    }
+                },
+                "polyline": {
+                    "error": "<strong>Fehler:</strong> Kanten der Form dürfen sich nicht kreuzen!",
+                    "tooltip": {
+                        "start": "Klicken um das Zeichnen der Linie zu beginnen.",
+                        "cont": "Klicken um das Zeichnen der Linie fortzusetzen.",
+                        "end": "Letzten Punkt anklicken, um die Linie fertigzustellen."
+                    }
+                },
+                "rectangle": {
+                    "tooltip": {
+                        "start": "Klicken und ziehen um Rechteck zu zeichnen."
+                    }
+                },
+                "simpleshape": {
+                    "tooltip": {
+                        "end": "Maus loslassen um Zeichnung fertigzustellen."
+                    }
+                }
+            }
+        },
+        "edit": {
+            "toolbar": {
+                "actions": {
+                    "save": {
+                        "title": "Änderungen speichern.",
+                        "text": "Speichern"
+                    },
+                    "cancel": {
+                        "title": "Bearbeiten abbrechen, verwirft alle Änderungen.",
+                        "text": "Abbrechen"
+                    },
+                    "clearAll":{
+                        "title": "Lösche alle Objekte.",
+                        "text": "Alle löschen"
+                    }
+                },
+                "buttons": {
+                    "edit": "Objekte bearbeiten",
+                    "editDisabled": "Keine Objekte zum Bearbeiten vorhanden.",
+                    "remove": "Objekte löschen",
+                    "removeDisabled": "Keine Objekte zum Löschen vorhanden."
+                }
+            },
+            "handlers": {
+                "edit": {
+                    "tooltip": {
+                        "text": "Anfasser oder Marker ziehen, um Objekt zu bearbeiten.",
+                        "subtext": "Abbrechen klicken, um Änderungen rückgängig zu machen."
+                    }
+                },
+                "remove": {
+                    "tooltip": {
+                        "text": "Auf Objekt klicken um es zu entfernen."
+                    }
+                }
+            }
+        }
+    },
+    "Draw a rectangle":"Zeichne ein Rechteck"
 }
